@@ -5,6 +5,7 @@ import bo.vulcan.dto.course.CourseSaveDto;
 import bo.vulcan.entity.Course;
 import bo.vulcan.mapper.ICourseMapper;
 import bo.vulcan.service.ICourseService;
+import jakarta.annotation.security.RolesAllowed;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
@@ -15,6 +16,7 @@ import java.net.URI;
 import java.util.List;
 
 @Path("/course")
+@RolesAllowed("admin")
 public class CourseResource {
 
     @Inject
