@@ -11,12 +11,15 @@ You can run your application in dev mode that enables live coding using:
 ```shell script
 ./mvnw quarkus:dev
 ```
+> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/swagger-ui>.
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
+If the services ask for a username and password, use the following:
 
+> **Username: root**
+> 
+> **Password: root**
 ## Packaging and running the application
 
-The application can be packaged using:
 
 ```shell script
 ./mvnw package
