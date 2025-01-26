@@ -14,6 +14,8 @@ public interface ICourseMapper {
 
     CourseDto toDto(Course course);
     List<CourseDto> toDto(List<Course> courseList);
+
+    @Mapping(target = "id", ignore = true)
     Course toEntity(CourseSaveDto courseSaveDto);
 
     @Mapping(target = "genderList", ignore = true)

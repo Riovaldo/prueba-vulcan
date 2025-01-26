@@ -15,7 +15,7 @@ import jakarta.ws.rs.core.Response;
 import java.net.URI;
 import java.util.List;
 
-@Path("/course")
+@Path("/api/course")
 @RolesAllowed("admin")
 public class CourseResource {
 

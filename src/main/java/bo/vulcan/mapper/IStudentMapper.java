@@ -15,6 +15,7 @@ public interface IStudentMapper {
     StudentDto toDto(Student student);
     List<StudentDto> toDto(List<Student> studentList);
 
+    @Mapping(target = "id", ignore = true)
     @Mapping(source = "courseId", target = "course", qualifiedByName = "toCourse")
     Student toEntity(StudentSaveDto studentSaveDto);
 
