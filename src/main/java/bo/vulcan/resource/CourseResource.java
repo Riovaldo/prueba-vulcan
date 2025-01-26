@@ -69,4 +69,11 @@ public class CourseResource {
         this.courseService.deleteById(id);
         return Response.ok().build();
     }
+
+    @GET
+    @Path("/more-details")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getWithDetails() {
+        return Response.ok(this.courseService.getCourseListWithDetails()).build();
+    }
 }
