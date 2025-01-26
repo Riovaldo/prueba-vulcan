@@ -15,7 +15,7 @@ import jakarta.ws.rs.core.Response;
 import java.net.URI;
 import java.util.List;
 
-@Path("/student")
+@Path("/api/student")
 @RolesAllowed("admin")
 public class StudentResource {
 
